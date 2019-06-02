@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+body{
+  margin: 0px;
+  overflow: hidden;
+  background-color: rgb(46, 46, 46);
+}
+html,body, #root, .rootDiv, .rootDiv>div{
+  height: 100%; 
+}
+
+video{
+  /* box-shadow:inset 0px 0px 0px 4px black; */
+
+  margin: 0px;
+  padding: 0px;
+
+  max-width: 400px;
+  height: 100%;
+}
+#snapImage{
+  /* position: absolute;
+  margin: 0px;
+  padding: 0px;
+  max-width: 400px;
+  
+  top: 50px; */
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  height: calc(100% - 80px);
+  width: 100%;
+  top: 50px;
+}
+.capturePanelRoot{
+  background-color: rgb(233, 233, 233);
+  position: absolute;
+  margin-top: -100px;
+  height: 100px !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#captureBtn{
+  height: 65px;
+  width: 65px;
+  margin-top: 10px;
+  border: 3px solid rgb(31, 31, 31);
+  outline: none;
+  border-radius: 40px;
+  background-color: rgb(247, 191, 7);
+  box-shadow:inset 0px 0px 0px 4px rgb(221, 221, 221);
+}
+
+.topBar{
+  font-family: 'Play', sans-serif;
+  position: absolute;
+  height: 50px !important; width: 100%;
+  background-color: rgb(233, 233, 233);
+  text-align: center;
+  
+}
+
+#closePreview{
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(236, 113, 12);
+  color: white;
+}
+
+.outputRoot{
+  position: fixed;
+  height: 200px !important;
+  top: 130px;
+  background-color: rgba(247, 163, 7, 0.822);
+  width: 100%;
+  z-index: 1000;
+}
+
+.outputRoot>ul{
+  list-style: none;
+  font-family: 'Viga', sans-serif;
+}
+.outputRoot>ul>li:nth-child(1){
+  color: white;
+  font-size: 35px;
+}
+.outputRoot>ul>li:nth-child(1)>span{
+  font-size: 14px;
+  display: block;
+}
+
+.outputRoot>ul>li:nth-child(2), .outputRoot>ul>li:nth-child(3){
+  font-size: 12px;
+  color: white;
+}
